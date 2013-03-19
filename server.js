@@ -24,11 +24,12 @@ var server = http.createServer(function (req, res) {
     var indexStream = fs.createReadStream(indexFile);
 
     // Pages to create streams from and attach to main html
-    var pages = [];
+    var pages = ['root'];
     var streams = pages.reduce(function (acc, page) {
         var name = page.replace(/-/g, '_') + '.html';
         var file = path.join(__dirname, 'static', 'pages', name);
         acc['#' + page] = fs.createReadStream(file);
+        return acc;
     }, {});
 
     // Links up html streams to the main html stream and sends it down to the browser
