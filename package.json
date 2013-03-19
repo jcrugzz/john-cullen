@@ -18,5 +18,6 @@
   },
   "devDependencies": {
     "browserify": "~2.7.1"
-  }
+  },
+  "subdomain": "john-cullen"
 }
