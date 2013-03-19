@@ -2,5 +2,14 @@
     font-family: 'Averia Gruesa Libre';
     font-style: normal;
     font-weight: 400;
-    src: local('AveriaGruesaLibre-Regular')
+    src: local('AveriaGruesaLibre-Regular'), url(https://themes.googleusercontent.com/static/fonts/averiagruesalibre/v1/10vbZTOoN6T8D-nvDzwRF5uuuq_qXTp1UlATXrEEszk.woff), url('AveriaGruesaLibre-Regular') format('woff');
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Averia Gruesa Libre', san-serif;
+}
+
+#header {
+
 }

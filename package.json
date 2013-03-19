@@ -4,6 +4,8 @@
   "description": "Website for my friend John Cullen to sell himself for profit",
   "main": "server.js",
   "scripts": {
+    "start": "node server.js"
+    "browser": "node_modules/browserify/bin/cmd.js browser/main.js -o static/bundle.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": "",
@@ -12,5 +14,8 @@
   "dependencies": {
     "hyperstream": "~0.1.0",
     "ecstatic": "~0.4.1"
+  },
+  "devDependencies": {
+    "browserify": "~2.7.1"
   }
 }
