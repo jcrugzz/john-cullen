@@ -1,7 +1,7 @@
 {
-  "name": "johns-site",
+  "name": "john-cullen",
   "version": "0.0.0",
-  "description": "Website for my friend John Cullen to sell himself for profit",
+  "description": "Website for my good friend John Cullen to help him sell himself for profit",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
