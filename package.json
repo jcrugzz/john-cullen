@@ -4,7 +4,7 @@
   "description": "Website for my friend John Cullen to sell himself for profit",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
     "browser": "node_modules/browserify/bin/cmd.js browser/main.js -o static/bundle.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
