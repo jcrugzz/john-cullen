@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "browser": "node_modules/browserify/bin/cmd.js browser/main.js -o static/bundle.js",
+    "bundle": "node_modules/browserify/bin/cmd.js -t brfs browser/main.js | node_modules/uglify-js/bin/uglifyjs | gzip > static/bundle.js.gz",
+    "dev": "node_modules/browserify/bin/cmd.js -t brfs browser/main.js --debug | gzip > static/bundle.js.gz",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": "git://github.com/jcrugzz/john-cullen.git",
@@ -17,7 +18,9 @@
     "single-page": "~0.2.2"
   },
   "devDependencies": {
-    "browserify": "~2.7.1"
+    "browserify": "~2.7.1",
+    "uglify-js": "~2.2.5",
+    "brfs": "~0.0.2"
   },
   "subdomain": "john-cullen"
 
