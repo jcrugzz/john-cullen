@@ -4,6 +4,7 @@ var vis = require('./vis');
 var pages = [].slice.call(document.querySelectorAll('.page'))
     .reduce(function (acc, elem) {
         acc[elem.getAttribute('id')] = elem;
+        return acc;
     }, {});
 
 // Handle href links on page
