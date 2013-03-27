@@ -10,6 +10,11 @@ var ecstatic = require('ecstatic')({
 });
 
 var server = http.createServer(function (req, res) {
+
+    if (req.url === '/images.json') {
+        var imgdir = path.join(__dirname, 'static', 'images');
+    }
+
     // Do logic to intercept any other type of page or static resource here
     if (!/^\/[^\.\/]*$/.test(req.url)
     || RegExp('^/(images|doc|projects|audio|video)\\b').test(req.url)) {

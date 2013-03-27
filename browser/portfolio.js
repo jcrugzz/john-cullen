@@ -23,6 +23,6 @@ Portfolio.prototype.render = function (src) {
 };
 
 function loadImages (cb) {
-
+    var r = hyperquest('http://' + window.location.host + '/images.json');
 }
 
