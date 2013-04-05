@@ -36,7 +36,7 @@ var server = http.createServer(function (req, res) {
         acc['#' + page] = fs.createReadStream(file);
         return acc;
     }, {});
-
+    // add this comment to test some shit
     // Links up html streams to the main html stream and sends it down to the browser
     indexStream.pipe(hyperstream(streams)).pipe(res);
 });
